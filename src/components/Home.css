@@ -1,0 +1,39 @@
+.home {
+    background-color: blanchedalmond;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.home:hover {
+    transform: translate(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.home h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+
+}
+.home p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    columns: #333;
+
+}
+
+@media (max-width: 600px){
+    .home{
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    .home h2{
+        font-size: 1.5rem;
+    }
+}

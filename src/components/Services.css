@@ -1,0 +1,18 @@
+.services {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.services h2 {
+  color: #333;
+}
+
+.services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services li {
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
