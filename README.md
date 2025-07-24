@@ -1,12 +1,41 @@
-# React + Vite
+# ✨ Quote Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive React-based application that displays random inspirational quotes. Built as a beginner-friendly project to learn React fundamentals like state, JSX, and event handling.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📝 Displays a random motivational quote
+- 🔁 "New Quote" button to get fresh quotes
+- 🌐 (Optional) Fetches quotes from an external API
+- 📋 Can be extended to copy/tweet quotes
+- 💅 Responsive and stylish design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📚 What I Learned
+
+- ✅ React functional components
+- ✅ Using `useState` for state management
+- ✅ Handling button click events
+- ✅ (Optional) Fetching external data using `fetch()`
+- ✅ Styling with CSS
+- ✅ Git & GitHub version control
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech     | Description                      |
+|----------|----------------------------------|
+| React    | Frontend JavaScript library      |
+| Vite     | Fast build tool and dev server   |
+| CSS      | For styling                      |
+| JavaScript | Core language for logic        |
+| GitHub   | Version control and hosting      |
+
+---
+
+## 🧩 Folder Structure
+

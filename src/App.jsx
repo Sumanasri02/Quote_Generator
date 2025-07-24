@@ -1,34 +1,31 @@
-// import React from 'react';
-// // actual react component --> UI/ logic
-// class App extends React.Component { //class comp APP 
-//   render() {
-//     //
-//     return <h1>Hello {this.props.name}</h1>;
-//   }
-// }
+//main component logic
+import {useState} from 'react'; //useState is react hook, to create state insde component
+import quotes from './quotes'; //an array of quotes
+import './App.css';
 
-// export default App; // avaiable for other files to use
-
-//state 
-import React from "react";
-class Counter extends React.Component{
-  constructor(){
-    super();
-      this.state = {
-        count:0
-      }
-    
-  }
-  updateCount = () => {
-    this.setState(prevState => ({count : prevState.count + 1}));
+function App() {
+  const getRandomQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length); //picks a random quote from the array
+    return quotes[randomIndex];
   };
 
-  render() {
-    return(
-      <button onClick={this.updateCount}>
-        Clicked {this.state.count} times
-      </button>
-    );
-  }
+  const [quote, setQuote] = useState(getRandomQuote());
+
+  const handleNewQuote = () => {
+    setQuote(getRandomQuote());
+  };
+
+  return (
+    <div className="app">
+      <div className="quote-box">
+        <h2>"{quote.text}"</h2>
+        <p>{quote.author}</p>
+        <button onClick = {handleNewQuote}>New Quote</button>
+
+      </div>
+
+    </div>
+  )
 }
-export default Counter;
+
+export default App;
